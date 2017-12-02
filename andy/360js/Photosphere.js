@@ -105,12 +105,12 @@ function loadImage(image){
 
 
 function fullscreen(){
-  var element = document.body;
+   var element = document.body;
   element.requestFullscreen = element.requestFullscreen || 
       element.mozRequestFullscreen || 
       element.mozRequestFullScreen || 
       element.webkitRequestFullscreen;
 
-  element.requestFullscreen();
+  element.requestFullscreen(); 
 }
 
