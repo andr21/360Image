@@ -15,6 +15,8 @@ if(img == undefined){
 }else{
   var sphereIMG = "img";
 }
+var img2 = "room.jpg"
+
 loadImage(img);
 
 var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
