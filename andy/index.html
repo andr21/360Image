@@ -8,20 +8,42 @@
       overflow: hidden; 
       background-color: #000; 
     }
-    #sphere {
-    
+    #box{
+     height: 205px;
+     width: 305px;
+     background-color: #262626;
+     position: relative;
+     
+    }
+    #sphere{
+     padding-top: 2.5px;
+     display: block;
+    }
+    #fullicon{
+     height: 18px;
+     width: 18px;
+     bottom: 5px;
+     right: 5px;
+     position: absolute;
     }
   </style>	
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
-  <div id="sphere"></div>
+<br><br>
 
+<center>
+<div id="box">
+  <div id="sphere">
+  <img id="fullicon" src="icons/fullscreen.png">
+  </div>
+</div>
+</center>
 
   <script src="360js/three.min.js"></script>
-  <script src="360js/OrbitControls.js"></script>	
+  <script src="360js/OrbitControls.js"></script>
   <script src="360js/Detector.js"></script>		
   <script src="360js/Photosphere.js"></script>
 </body>

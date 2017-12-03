@@ -1,7 +1,9 @@
 //scene setup
 var webglEl = document.getElementById('sphere');
-var width  = window.innerWidth;
-var height = window.innerHeight;
+var width  = 300;
+//window.innerWidth;
+var height = 200;
+//window.innerHeight;
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, width / height, 1, 1000);
 camera.position.x = 0.1;
@@ -9,7 +11,7 @@ var controls;
 
 var img = getVar("img");
 if(img == undefined){
-  var sphereIMG = "station24bay.jpg";
+  var sphereIMG = "street.jpg";
 }else{
   var sphereIMG = "img";
 }
@@ -47,14 +49,25 @@ function onMouseWheel(event) {
 //events
 document.addEventListener('mousewheel', onMouseWheel, false);
 document.addEventListener('DOMMouseScroll', onMouseWheel, false);
-window.addEventListener( 'resize', onWindowResize, false );
-document.body.addEventListener("mousedown", fullscreen, false);
+//window.addEventListener( 'resize', onWindowResize, false );
+//document.body.addEventListener("mousedown", fullscreen, false);
 
+
+var fsicon = document.querySelector('#fullicon');
+
+fsicon.onclick = function(){
+ fullscreen();
+}
+
+
+
+/*
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
+*/
 
 function getVar(name) {
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -97,7 +110,7 @@ function loadImage(image){
       loadSphere();
     }else{
       //alert("Sorry, the tour you chose does not exist");
-      sphereIMG = "img/lorry.jpg";
+      sphereIMG = "img/street.jpg";
       loadSphere();
     }
   });    
