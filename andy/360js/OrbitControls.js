@@ -1,3 +1,6 @@
+
+var testtext = document.getElementById('test');
+
 /**
  * @author qiao / https://github.com/qiao
  * @author mrdoob / http://mrdoob.com
@@ -521,7 +524,15 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	}
 
+ 
 	function touchstart( event ) {
+
+
+//testtext.innerHTML = event.touches[ 0 ].pageX + " , " + event.touches[ 0 ].pageY;
+
+if(inBox(event.touches[ 0 ].pageX,event.touches[ 0 ].pageY) == true){
+startedinbox = true
+}
 
 		if ( scope.enabled === false ) return;
 
@@ -571,7 +582,10 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		if ( scope.enabled === false ) return;
 
+if(startedinbox == true){
 		event.preventDefault();
+		
+		
 		event.stopPropagation();
 
 		var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
@@ -646,12 +660,13 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		}
 
+}
 	}
 
 	function touchend( /* event */ ) {
 
 		if ( scope.enabled === false ) return;
-
+ startedinbox = false;
 		scope.dispatchEvent( endEvent );
 		state = STATE.NONE;
 
@@ -675,3 +690,15 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 THREE.OrbitControls.prototype = Object.create( THREE.EventDispatcher.prototype );
 THREE.OrbitControls.prototype.constructor = THREE.OrbitControls;
+
+
+var startedinbox = false;
+
+function inBox(x,y){
+ if(x >= box.offsetLeft && x <= box.offsetLeft + width && y >= box.offsetTop && y <= box.offsetTop + height){
+ return true;
+ }else{
+ return false;
+ }
+
+}

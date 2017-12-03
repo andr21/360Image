@@ -9,8 +9,8 @@
       background-color: #000; 
     }
     #box{
-     height: 205px;
-     width: 305px;
+     width: 905px;
+     height: 605px;
      background-color: #262626;
      position: relative;
      
@@ -28,12 +28,15 @@
     }
   </style>	
   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 <br><br>
 
+<p id="test"></p>
 <center>
 <div id="box">
   <div id="sphere">
@@ -46,8 +49,12 @@
 <button id = "button1" type="button" onclick="loadImage('city.jpg');">Pic1</button>
 <button id = "button2" type="button" onclick="loadImage('street.jpg');">Pic2</button>
 <button id = "button3" type="button" onclick="loadImage('lorry.jpg');">Pic3</button>
+<button id = "button4" type="button" onclick="loadImage('square.jpg');">Pic4</button>
+<button id = "button5" type="button" onclick="loadImage('stadium.jpg');">Pic5</button>
 
 </center>
+<br>
+
 
   <script src="360js/three.min.js"></script>
   <script src="360js/OrbitControls.js"></script>

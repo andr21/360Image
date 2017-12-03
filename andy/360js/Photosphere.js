@@ -1,8 +1,8 @@
 //scene setup
 var webglEl = document.getElementById('sphere');
-var width  = 300;
+var width  = 900;
 //window.innerWidth;
-var height = 200;
+var height = 600;
 //window.innerHeight;
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, width / height, 1, 1000);
@@ -98,8 +98,8 @@ function loadSphere(){
 
 function loadControls(){ 
   controls = new THREE.OrbitControls(camera);
-  controls.noPan = true;
-  controls.noZoom = true; 
+  controls.noPan = false;
+  controls.noZoom = false; 
   controls.autoRotate = true;
   controls.autoRotateSpeed = 0.5;
 }
