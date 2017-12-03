@@ -11,11 +11,11 @@ var controls;
 
 var img = getVar("img");
 if(img == undefined){
-  var sphereIMG = "street.jpg";
+  var sphereIMG = "square.jpg";
 }else{
   var sphereIMG = "img";
 }
-var img2 = "room.jpg"
+
 
 loadImage(img);
 
@@ -112,7 +112,7 @@ function loadImage(image){
       loadSphere();
     }else{
       //alert("Sorry, the tour you chose does not exist");
-      sphereIMG = "img/street.jpg";
+      sphereIMG = "img/square.jpg";
       loadSphere();
     }
   });    
