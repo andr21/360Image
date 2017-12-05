@@ -1,112 +1,637 @@
-<link rel="stylesheet" href="src/js/Photo-Sphere-Viewer/dist/photo-sphere-viewer.css">
+<!DOCTYPE html>
 
-<script src="src/js/three.js/three.min.js"></script>
-<script src="src/js/D.js/lib/D.min.js"></script>
-<script src="src/js/uevent/uevent.min.js"></script>
-<script src="src/js/doT/doT.min.js"></script>
-<script src="src/js/Photo-Sphere-Viewer/dist/photo-sphere-viewer.js"></script>
 
-<div id="vrview"></div>
 
-<script type="text/template" id="pin-content">
-    <h1>HTML Ipsum Presents</h1>
+<!-- saved from url=(0063)http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Lyon</title>
 
-    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-        semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien
-        ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi.
-        Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a
-                href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-    <h2>Header Level 2</h2>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link sizes="16x16" href="http://demo.sunrisetheme.com/html-lyon/images/upload/favicon.png" rel="icon">
+        <link rel="stylesheet" href="src/js/Photo-Sphere-Viewer/dist/photo-sphere-viewer.css">
+		<link rel="stylesheet" type="text/css" href="./Lyon_files/main.css">
+		<link rel="stylesheet" type="text/css" href="./Lyon_files/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./Lyon_files/material-design-iconic-font.min.css">
+		<link rel="stylesheet" type="text/css" href="./Lyon_files/js_composer.css">
+		<link rel="stylesheet" type="text/css" href="./Lyon_files/responsive.css">
+		<link rel="stylesheet" type="text/css" href="./Lyon_files/event.css">
+		<link rel="stylesheet" type="text/css" href="./Lyon_files/popular.css">
+		<link href="./Lyon_files/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="src/js/three.js/three.min.js"></script>
+    <script src="src/js/D.js/lib/D.min.js"></script>
+    <script src="src/js/uevent/uevent.min.js"></script>
+    <script src="src/js/doT/doT.min.js"></script>
+    <script src="./Lyon_files/jquery.min.js" type="text/javascript"></script>
+    <script src="src/js/Photo-Sphere-Viewer/dist/photo-sphere-viewer.js"></script>
+    <script src="src/js/360.js"></script>
 
-    <ol>
-        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-        <li>Aliquam tincidunt mauris eu risus.</li>
-    </ol>
 
-    <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet
-        congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus
-        est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+	</head>
+	<body class="offcanvas-type-default offcanvas-right">
 
-    <h3>Header Level 3</h3>
+		<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#" class="k2t-btt" style="display: none;"></a>
+		<header class="k2t-header full">
+			<div class="k2t-header-mid ">
+				<div class="k2t-wrap">
+					<div class="k2t-row">
+						<div class="col-2 left col-find-hotel">
+							<div class="h-element select-hotel relative">
+								<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#" class="find-a-hotel">FIND A HOTEL</a>
+								<ul class="absolute ul-select">
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Paris</a></li>
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">London</a></li>
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Monaco</a></li>
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Ibiza</a></li>
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Beverly Hills</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-8 center">
+							<ul class="h-element k2t-menu " id="menu-menu-1">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-has-children menu-item-1874 active children " id="menu-item-1874">
+									<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/index.html">
+									<span class="k2t-title-menu">Home</span> <span class="caret"></span>
+									</a>
+									<ul class="sub-menu">
+										<li class="menu-item menu-item-type-post_type menu-item-object-page  page_item page-item-1866 current_page_item menu-item-2375 active k2t-dropdown-submenu" id="menu-item-2375">
+											<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/index.html">
+											<span class="k2t-title-menu">Homepage 1</span>
+											</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2376 k2t-dropdown-submenu" id="menu-item-2376">
+											<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/index2.html">
+											<span class="k2t-title-menu">Homepage 2</span>
+											</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237 k2t-dropdown-submenu" id="menu-item-237">
+											<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/index3.html">
+											<span class="k2t-title-menu">Homepage 2</span>
+											</a>
+										</li>
+									</ul>
+								</li>
 
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-        <li>Aliquam tincidunt mauris eu risus.</li>
-    </ul>
+								<li class="menu-item current-menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2029 children " id="menu-item-2029">
+									<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#"><span class="k2t-title-menu">Rooms</span> <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2116 k2t-dropdown-submenu" id="menu-item-2116"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-2-columns.html"><span class="k2t-title-menu">Rooms listing 2 columns</span></a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2030 k2t-dropdown-submenu" id="menu-item-2030"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-3-columns.html"><span class="k2t-title-menu">Rooms listing 3 columns</span></a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1875 k2t-dropdown-submenu" id="menu-item-1875"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-grid-3-columns.html"><span class="k2t-title-menu">Rooms listing grid 3 columns</span></a></li>
+										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2304 k2t-dropdown-submenu" id="menu-item-2304"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-room.html"><span class="k2t-title-menu">Single Room</span></a></li>
+										<li class="menu-item current-menu-item menu-item-type-custom menu-item-object-custom menu-item-2273 k2t-dropdown-submenu" id="menu-item-2273"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html"><span class="k2t-title-menu">Single Room Gallery</span></a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1876" id="menu-item-1876"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/choose-date.html"><span class="k2t-title-menu">Reservation</span></a></li>
+							</ul>
+							<div class="h-element ">
+								<a href="http://demo.sunrisetheme.com/html-lyon/index.html" rel="home" class="k2t-logo">
+								<img alt="Lyon" src="./Lyon_files/logo.png">
+								</a>
+							</div>
+							<ul class="h-element k2t-menu " id="menu-menu-2">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1706 children " id="menu-item-1706">
+									<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#"><span class="k2t-title-menu">Blog</span> <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1783 children k2t-dropdown-submenu" id="menu-item-1783">
+											<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/medium-thumbnail.html"><span class="k2t-title-menu">Medium thumbnail</span></a>
+											<ul class="sub-menu">
+												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1752" id="menu-item-1752"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/medium-left-sidebar.html"><span class="k2t-title-menu">Medium left sidebar</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1748" id="menu-item-1748"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/medium-right-sidebar.html"><span class="k2t-title-menu">Medium right sidebar</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1722" id="menu-item-1722"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/medium-full-width.html"><span class="k2t-title-menu">Medium full width</span></a></li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2248 children k2t-dropdown-submenu" id="menu-item-2248">
+											<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-post-standard.html"><span class="k2t-title-menu">Single post</span></a>
+											<ul class="sub-menu">
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2249" id="menu-item-2249"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-post-video.html"><span class="k2t-title-menu">Post format: Video</span></a></li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2250" id="menu-item-2250"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-post-gallery.html"><span class="k2t-title-menu">Post format: Gallery</span></a></li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2251" id="menu-item-2251"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-post-soundcloud.html"><span class="k2t-title-menu">Post format: Soundcloud</span></a></li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2252" id="menu-item-2252"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-post-audio.html"><span class="k2t-title-menu">Post format: Audio</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2020" id="menu-item-2020"><a class="btn-ripple" href="http://themeforest.net/item/lyon-luxury-hotel-booking-html5-template/13472406?ref=sunrisetheme&amp;license=regular&amp;open_purchase_for_item_id=13472406&amp;purchasable=source"><span class="k2t-title-menu">Purchase</span></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1880 children " id="menu-item-1880">
+									<a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#"><span class="k2t-title-menu">Pages</span> <span class="caret"></span></a>
+									<ul class="sub-menu">
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1711" id="menu-item-1711"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/about-us.html"><span class="k2t-title-menu">About</span></a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2002 k2t-dropdown-submenu" id="menu-item-2002"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/gallery.html"><span class="k2t-title-menu">Gallery</span></a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2361 k2t-dropdown-submenu" id="menu-item-2361"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/gallery-2-columns.html"><span class="k2t-title-menu">Gallery 2 columns</span></a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236 k2t-dropdown-submenu" id="menu-item-236"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/404.html"><span class="k2t-title-menu">404</span></a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1878" id="menu-item-1878"><a class="btn-ripple" href="http://demo.sunrisetheme.com/html-lyon/contact.html"><span class="k2t-title-menu">Contact</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-2 right col-right-language">
+							<div class="h-element select-language relative">
+								<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#" class="current-language">ENGLISH &nbsp;<i class="zmdi zmdi-chevron-down"></i></a>
+								<ul class="absolute ul-select">
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Spainese</a></li>
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">English</a></li>
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Germanese</a></li>
+									<li><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">French</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- .row -->
+				</div>
+				<!-- .k2t-wrap -->
+			</div>
+			<!-- .k2t-header-mid -->
+			<div class="k2t-header-m">
+				<div class="k2t-menu-m">
+					<a class="m-trigger mobile-menu-toggle"><span></span></a>
+					<div class="mobile-menu-wrap dark-div">
+						<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#" class="mobile-menu-toggle"><i class="fa fa-times-circle"></i></a>
+						<ul class="mobile-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-187 children">
+								<a href="http://demo.sunrisetheme.com/html-lyon/index.html">Home</a>
+								<ul class="sub-menu">
+									<li id="menu-item-2055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055">
+										<a href="http://demo.sunrisetheme.com/html-lyon/index.html">Homepage 1</a>
+									</li>
+									<li id="menu-item-2056" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-159 current_page_item menu-item-2056 active">
+										<a href="http://demo.sunrisetheme.com/html-lyon/index2.html">Homepage 2</a>
+									</li>
+									<li id="menu-item-2057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2057">
+										<a href="http://demo.sunrisetheme.com/html-lyon/index3.html">Homepage 3</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-197 children">
+								<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">Rooms</a>
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-page">
+										<a href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-2-columns.html">Room Listing 2 Columns</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page">
+										<a href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-3-columns.html">Room Listing 3 Columns</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2208">
+										<a href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-grid-3-columns.html">Room Listing Grid 3 Columns</a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-619">
+										<a href="http://demo.sunrisetheme.com/html-lyon/single-room.html">Single Room</a>
+									</li>
+									<li class="menu-item current-menu-item menu-item-type-post_type menu-item-object-page menu-item-628">
+										<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Single Room Gallery</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2219 children">
+								<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">Pages</a>
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1077 children">
+										<a href="http://demo.sunrisetheme.com/html-lyon/about-us.html">About</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195">
+										<a href="http://demo.sunrisetheme.com/html-lyon/gallery.html">Gallery</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193">
+										<a href="http://demo.sunrisetheme.com/html-lyon/gallery-2-columns.html">Gallery 2 columns</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649">
+										<a href="http://demo.sunrisetheme.com/html-lyon/404.html">404</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1079 children">
+										<a href="http://demo.sunrisetheme.com/html-lyon/contact.html">Contact</a>
+									</li>
+								</ul>
+							</li>
 
-    <pre><code>
-#header h1 a {
-	display: block;
-	width: 300px;
-	height: 80px;
-}
-</code></pre>
-</script>
-<script>
-    var viewer = PhotoSphereViewer({
-        container: 'vrview',
-        panorama: 'img/square.jpg',
-        time_anim:false,
-        markers:[
-            {
-                id:'marker-for-canyon',
-                circle:40,
-                x:100,
-                y:600,
-                tooltip: {
-                    content: 'Click to change image',
-                    position: 'right bottom'
-                }
-            },
-            {
-                id:'html-marker',
-                html: 'This is a <b>html marker</b>',
-                anchor: 'bottom right',
-                style: {
-                    color: 'black',
-                    fontSize: '20px',
-                    fontFamily: 'Helvetica, sans-serif',
-                    textAlign: 'center'
-                },
-                latitude: -0.2,
-                longitude: 0.5
-            },
-            {
-                id: 'image',
-                longitude: 5.69810,
-                latitude: -0.13770,
-                image:  'img/pin2.png',
-                width: 32,
-                height: 32,
-                anchor: 'bottom center',
-                tooltip: 'A image marker. <b>Click me!</b>',
-                content: document.getElementById('pin-content').innerHTML
-            }
-        ],
-        navbar: [
-            'zoom',
-            'markers',
-            {
-                id: 'my-button',
-                title: 'Hello world',
-                className: 'custom-button',
-                content: 'Marker',
-                onClick: function() {
-                    viewer.gotoMarker('marker-for-canyon',1000)
-                }
-            },
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1078 children">
+								<a href="http://themeforest.net/item/lyon-luxury-hotel-booking-html5-template/13472406?ref=sunrisetheme&amp;license=regular&amp;open_purchase_for_item_id=13472406&amp;purchasable=source">Purchase</a>
+							</li>
+							<li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-224 children">
+								<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">Blog</a>
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2060">
+										<a href="http://demo.sunrisetheme.com/html-lyon/medium-thumbnail.html">Medium Thumbnail</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2061">
+										<a href="http://demo.sunrisetheme.com/html-lyon/medium-full-width.html">Medium Full Width</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2063">
+										<a href="http://demo.sunrisetheme.com/html-lyon/medium-left-sidebar.html">Medium Left Sidebar</a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2059">
+										<a href="http://demo.sunrisetheme.com/html-lyon/medium-right-sidebar.html">Medium Right Sidebar</a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2066 children">
+										<a href="http://demo.sunrisetheme.com/html-lyon/single-post-standard.html">Single Post</a>
+										<ul class="sub-menu">
+											<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2069">
+												<a href="http://demo.sunrisetheme.com/html-lyon/single-post-video.html">Post Format: Video</a>
+											</li>
+											<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2070">
+												<a href="http://demo.sunrisetheme.com/html-lyon/single-post-gallery.html">Post Format: Gallery</a>
+											</li>
+											<li id="menu-item-1078" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1078">
+												<a href="http://demo.sunrisetheme.com/html-lyon/single-post-soundcloud.html">Post Format: SoundCloud</a>
+											</li>
+											<li id="menu-item-1087" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1087">
+												<a href="http://demo.sunrisetheme.com/html-lyon/single-post-audio.html">Post Format: Audio</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="k2t-logo-m">
+					<a href="http://demo.sunrisetheme.com/html-lyon/index.html" rel="home" class="k2t-logo">
+					<img alt="Lyon" src="./Lyon_files/logo.png">
+					</a><!-- .k2t-logo -->
+				</div>
+				<!-- .k2t-logo-m -->
+				<div class="k2t-right-m">
+					<div class="canvas-sidebar">
+						<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#" class="open-sidebar" onclick="javascript:return false;">
+							<div class="inner"></div>
+						</a>
+					</div>
+				</div>
+				<!-- .k2t-right-m -->
+			</div>
+			<!-- .k2t-header-m -->
+		</header>
+		<div class="k2t-body">
+			<div class="k2t-content k2t-entry-event no-sidebar">
+				<div class="k2t-wrap">
+					<main class="k2t-main">
+						<div class="post-2089 post-k-event type-post-k-event status-publish has-post-thumbnail hentry k-event-category-3-grid k-event-category-mix-grid" id="main-col">
+							<div class="k2t-row k2t-rows-inner k2t-room-detail">
+								<div class="entry-content pull-left">
+									<div class="k2t-title-room pull-left w100">
+										<!-- Title -->
+										<div class="event-title">
+											<h3 class="h">King Suite Room
+												<span class="price pull-right">
+												<span class="amount">$&nbsp;1,350</span>
+												<span class="amount">/ night</span>
+												</span>
+											</h3>
+										</div>
+										<!-- END Title -->
+									</div>
+									<div class="k2t-event-gallery pull-left w100">
+                                        <div id="vrview"></div>
 
-            'caption',
-            'fullscreen'
-        ]
-    });
+									</div>
+									<h3 class="event-item-title"> Services &amp; Functions </h3>
+									<div class="col-6">
+										<p class="attribute">
+											<i class="zmdi zmdi-check"></i>
+											<b>Bed:</b> 1 King Bed
+										</p>
+										<p class="attribute">
+											<i class="zmdi zmdi-check"></i>
+											<b>Max:</b> 4 People
+										</p>
+										<p class="attribute">
+											<i class="zmdi zmdi-check"></i>
+											<b>View:</b> City
+										</p>
+										<p class="attribute">
+											<i class="zmdi zmdi-check"></i>
+											<b>Room size:</b> 82 sqm
+										</p>
+									</div>
+									<div class="col-6">
+										<p class="attribute">
+											<i class="zmdi zmdi-check"></i>
+											<b>Room:</b> 3
+										</p>
+										<p class="attribute">
+											<i class="zmdi zmdi-check"></i> <b>Bathroom:</b> 2
+										</p>
+										<p class="attribute">
+											<i class="zmdi zmdi-wifi-alt"></i>
+											Free wifi
+										</p>
+										<p class="attribute">
+											<i class="zmdi zmdi-tv"></i>
+											TV in room
+										</p>
+									</div>
+									<!-- Description -->
+									<div class="event-description pull-left">
+										<h3 class="h event-item-title">Description</h3>
+										<div class="content">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit apnim id est laborum.
+											</p>
+										</div>
+									</div>
+									<!-- Event Calendar Import -->
+									<div class="btn btn-booking pull-left">
+										<a class="event-link" target="_blank" href="http://demo.sunrisetheme.com/html-lyon/reservation.html">Booking This Room</a>
+									</div>
+								</div>
+								<div class="event-entry-meta pull-right">
+									<div class="k2t-branch-confirm w100 k2t-step1-right pull-right">
+										<p class="title-confirm">Book a Room</p>
+										<p class="sub-title-confirm">Exclusive Online Site Offer</p>
+										<div class="pull-left w100">
+											<span class="relative pull-left w100 k2t-step1-span">
+												<select class="k2t-step1-select pull-left w100">
+													<option>Hotel Branches</option>
+													<option>London</option>
+													<option>Paris</option>
+													<option>New York</option>
+												</select>
+											</span>
+											<span class="pull-left w100 relative k2t-step1-input">
+											<input class="k2t-select-checkin pull-left w100 hasDatepicker" placeholder="Check In" id="dp1512509886953">
+											</span>
+											<span class="pull-left w100 relative k2t-step1-input">
+											<input class="k2t-select-checkout pull-left w100 hasDatepicker" placeholder="Check Out" id="dp1512509886954">
+											</span>
+											<span class="relative pull-left w100 k2t-step1-span">
+												<select class="k2t-step1-select pull-left w100 relative">
+													<option>Room</option>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+												</select>
+											</span>
+											<div class="pull-left w100 k2t-select-people">
+												<span class="relative pull-left k2t-step1-span">
+													<select class="k2t-step1-select pull-left w100">
+														<option>Adult</option>
+														<option>0</option>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+														<option>6</option>
+													</select>
+												</span>
+												<span class="relative pull-right k2t-step1-span">
+													<select class="k2t-step1-select pull-right w100">
+														<option>Children</option>
+														<option>0</option>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+														<option>5</option>
+														<option>6</option>
+													</select>
+												</span>
+											</div>
+										</div>
+										<div class="pull-left w100" style="padding:0 20%">
+											<a href="http://demo.sunrisetheme.com/html-lyon/choose-room.html" class="k2t-btn-editbooking pull-left">Book Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- #main-col -->
+					</main>
+					<!-- .k2t-blog -->
+				</div>
+				<!-- .k2t-wrap -->
+			</div>
+			<!-- .k2t-content -->
+		</div>
+		<footer class="k2t-footer">
+			<div style="background-image:url(images/upload/bgmap.png); background-color:#252525; background-repeat:no-repeat; background-size:cover; background-position:center top;" class="k2t-bottom">
+				<div class="k2t-wrap">
+					<div class="k2t-row">
+						<div class="col-12 k2t-floatleft">
+							<aside class="widget widget_black_studio_tinymce" id="black-studio-tinymce-3">
+								<div class="textwidget">
+									<p>
+										<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#"><img width="252" height="26" alt="logo-footer" src="./Lyon_files/logo-footer.png" class="alignnone size-full wp-image-1755">
+										</a>
+									</p>
+								</div>
+							</aside>
+							<aside class="widget widget_text widget-f-info" id="text-4">
+								<div class="textwidget">
+									<i class="zmdi zmdi-phone zmdi-hc-fw"></i> Hoteline: +123 868 6868 &nbsp; &nbsp; &nbsp; <i class="zmdi zmdi-email zmdi-hc-fw"></i> Email: admin@lyonhotel.com
+								</div>
+							</aside>
+							<aside class="widget social-widget" id="k2t_social-2">
+								<ul>
+									<li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="google"><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+									<li class="instagram"><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+									<li class="linkedin"><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+					<!-- .k2t-row -->
+				</div>
+				<!-- .k2t-wrap -->
+			</div>
+			<!-- .k2t-bottom -->
+			<div style="background-color:#1f1f1f;" class="k2t-info">
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<div class="k2t-footer-menu">
+								<div class="menu-footer-menu-container">
+									<ul class="menu" id="menu-footer-menu">
+										<li class="menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-1857 active" id="menu-item-1857">
+											<a href="http://demo.sunrisetheme.com/html-lyon/about-us.html">About us</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" id="menu-item-1858">
+											<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">Gifts</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1859" id="menu-item-1859">
+											<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">Careers</a>
+										</li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1860" id="menu-item-1860">
+											<a href="http://demo.sunrisetheme.com/html-lyon/contact.html">Contact us</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="footer-copyright-right" class="col-6">
+							© Copyright 2015. Powered by WordPress. LYON HOTEL by SunriseTheme
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .k2t-info -->
+		</footer>
+		<!-- footer -->
+		<!-- Show Offcanvas sidebar -->
+		<!-- Show Offcanvas sidebar -->
+		<div class="offcanvas-sidebar" style="">
+			<div class="k2t-sidebar relative" style="padding:0">
+				<a id="close-canvas" onclick="javascript:return false;" class="open-sidebar" href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">
+				<span class="zmdi zmdi-close"></span>
+				</a>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu-1" class="menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1536 active children">
+							<a href="http://demo.sunrisetheme.com/html-lyon/index.html">Home</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-1538 active"><a href="http://demo.sunrisetheme.com/html-lyon/index.html">Homepage 1</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="http://demo.sunrisetheme.com/html-lyon/index2.html">Homepage 2</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1540"><a href="http://demo.sunrisetheme.com/html-lyon/index3.html">Homepage 3</a></li>
+							</ul>
+						</li>
+						<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1600"><a href="about-us.html">About</a>
+							</li> -->
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1541 children">
+							<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">Rooms</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1840"><a href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-2-columns.html">Room listing 2 colums</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1852"><a href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-3-columns.html">Room Listing 3 columns</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1843"><a href="http://demo.sunrisetheme.com/html-lyon/rooms-listing-grid-3-columns.html">Room Listing grid 3 columns</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1842"><a href="http://demo.sunrisetheme.com/html-lyon/single-room.html">Single Room</a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1844"><a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Single Room Gallery</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601"><a href="http://demo.sunrisetheme.com/html-lyon/choose-date.html">Reservation</a>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1542 children">
+							<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html#">Pages</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2118">
+									<a href="http://demo.sunrisetheme.com/html-lyon/gallery.html">Gallery</a>
+								</li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2069">
+									<a href="http://demo.sunrisetheme.com/html-lyon/gallery-2-columns.html">Gallery 2 columns</a>
+								</li>
+								<li class="menu-item current-menu-item menu-item-type-post_type menu-item-object-page menu-item-2119">
+									<a href="http://demo.sunrisetheme.com/html-lyon/404.html">404</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1721 children">
+							<a href="http://demo.sunrisetheme.com/html-lyon/single-room-gallery.html">Blog</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2208">
+									<a href="http://demo.sunrisetheme.com/html-lyon/medium-thumbnail.html">Medium Thumbnail</a>
+									<ul class="sub-menu">
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"><a href="http://demo.sunrisetheme.com/html-lyon/medium-full-width.html">Medium Full Width</a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1716"><a href="http://demo.sunrisetheme.com/html-lyon/medium-left-sidebar.html">Medium Left Sidebar</a></li>
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715"><a href="http://demo.sunrisetheme.com/html-lyon/medium-right-sidebar.html">Medium Right Sidebar</a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2213">
+									<a href="http://demo.sunrisetheme.com/html-lyon/single-post-standard.html">Single Post</a>
+									<ul class="sub-menu">
+										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2210"><a href="http://demo.sunrisetheme.com/html-lyon/single-post-video.html">Video Post</a></li>
+										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2211"><a href="http://demo.sunrisetheme.com/html-lyon/single-post-gallery.html">Gallery Post</a></li>
+										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2212"><a href="http://demo.sunrisetheme.com/html-lyon/single-post-audio.html">Audio Post</a></li>
+										<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2326"><a href="http://demo.sunrisetheme.com/html-lyon/single-post-soundcloud.html">Soundcloud Post</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604"><a href="contact.html">Contact</a>
+							</li> -->
+					</ul>
+				</div>
+				<div class="canvas-sidebar-social w100">
+					<aside class="widget social-widget" id="k2t_social-3">
+						<ul>
+							<li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li class="twitter"><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li class="google"><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+							<li class="instagram"><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<!-- End Show Offcanvas sidebar -->
+		<script type="text/javascript">
+			$(window).load(function() {
+			    var sync1 = $(".k2t-thumb-gallery");
+			    var sync2 = $("#inavigation");
+			    sync1.owlCarousel({
+			        navigationText: [
+			            "<i class='k2t k2t-arrow-prev'></i>",
+			            "<i class='k2t k2t-arrow-next'></i>"
+			        ],
+			        items: 1,
+			        autoPlay: 3000,
+			        singleItem: true,
+			        slideSpeed: 1000,
+			        navigation: true,
+			        pagination: true,
+			        afterAction: syncPosition,
+			        responsiveRefreshRate: 200,
+			    });
+			    sync2.owlCarousel({
+			        loop: true,
+			        items: 6,
+			        autoPlay: 3000,
+			        margin: 10,
+			        itemsDesktop : [1000,6],
+			        itemsDesktopSmall : [900,6],
+			        itemsTablet: [600,6],
+			        itemsMobile : [480,6],
+			        center: true,
+			        pagination: false,
+			        responsiveRefreshRate: 100,
+			        afterInit: function(el) {
+			            el.find(".owl-item").eq(0).addClass("synced");
+			        }
+			    });
 
-    viewer.on('select-marker', function(marker, dblclick) {
-        if(marker.id == 'marker-for-canyon'){
-                viewer.setPanorama('img/canyon.jpg')
-        }
-    });
-</script>
+			    function syncPosition(el) {
+			        var current = this.currentItem;
+			        $("#inavigation")
+			            .find(".owl-item")
+			            .removeClass("synced")
+			            .eq(current)
+			            .addClass("synced")
+			        if ($("#inavigation").data("owlCarousel") !== undefined) {
+			            center(current)
+			        }
+			    }
 
+			    $("#inavigation").on("click", ".owl-item", function(e) {
+			        e.preventDefault();
+			        var number = $(this).data("owlItem");
+			        sync1.trigger("owl.goTo", number);
+			    });
+
+			    function center(number) {
+			        var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+			        var num = number;
+			        var found = false;
+			        for (var i in sync2visible) {
+			            if (num === sync2visible[i]) {
+			                var found = true;
+			            }
+			        }
+
+			        if (found === false) {
+			            if (num > sync2visible[sync2visible.length - 1]) {
+			                sync2.trigger("owl.goTo", num - sync2visible.length + 2)
+			            } else {
+			                if (num - 1 === -1) {
+			                    num = 0;
+			                }
+			                sync2.trigger("owl.goTo", num);
+			            }
+			        } else if (num === sync2visible[sync2visible.length - 1]) {
+			            sync2.trigger("owl.goTo", sync2visible[1])
+			        } else if (num === sync2visible[0]) {
+			            sync2.trigger("owl.goTo", num - 1)
+			        }
+			    }
+			});
+		</script>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

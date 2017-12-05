@@ -1,42 +1,10 @@
-<link rel="stylesheet" href="src/js/Photo-Sphere-Viewer/dist/photo-sphere-viewer.css">
-
-<script src="src/js/three.js/three.min.js"></script>
-<script src="src/js/D.js/lib/D.min.js"></script>
-<script src="src/js/uevent/uevent.min.js"></script>
-<script src="src/js/doT/doT.min.js"></script>
-<script src="src/js/Photo-Sphere-Viewer/dist/photo-sphere-viewer.js"></script>
-
-<center>
-<div id="vrview"></div>
-</center>
-
-<style>
-#vrview{
-
-height: 400px;
-width: 800px;
-
-}
-
-</style>
-
-<script type="text/template" id="pin123">
-    <h2>Lorry thing</h2>
-
-                <img style="width: 200; height: auto;"src="img/pricelist.jpeg">
-
-                    <p><strong>Sugar plum tootsie roll gummi bears muffin</strong> biscuit gingerbread fruitcake candy. Croissant dessert jelly gingerbread jelly beans tart soufflé. Gingerbread marshmallow toffee. Sugar plum apple pie croissant
-                    <br>
-                    <br>
-                    candy tiramisu oat cake candy canes gummi bears liquorice. Marzipan biscuit macaroon apple pie chocolate bar. Cheesecake bonbon bonbon candy tootsie roll wafer.</p>
-
-</script>
-<script>
-
+$(document).ready(function(){
     var viewer = PhotoSphereViewer({
         container: 'vrview',
-        panorama: 'img/lorry.jpg',
+        panorama: 'images/360/hotelroom.jpg',
         time_anim:false,
+        size:{width: 700, height: 500},
+        default_fov:179,
         markers:[
             {
                 id:'marker-for-canyon',
@@ -61,7 +29,7 @@ width: 800px;
                 latitude: -3,
                 longitude: 0.5
             },
-             {
+            {
                 id: 'Swan Hotel',
                 longitude: 8.99810,
                 latitude: 0.09770,
@@ -70,7 +38,7 @@ width: 800px;
                 height: 64,
                 anchor: 'bottom center',
             },
-                         {
+            {
                 id: 'Jagged Edge',
                 longitude: 9.99810,
                 latitude: 0.09770,
@@ -87,8 +55,7 @@ width: 800px;
                 width: 75,
                 height: 100,
                 anchor: 'bottom center',
-                tooltip: 'Price list... <b>Click me!</b>',
-                content: document.getElementById('pin123').innerHTML
+                tooltip: 'Price list... <b>Click me!</b>'
             }
         ],
         navbar: [
@@ -111,8 +78,7 @@ width: 800px;
 
     viewer.on('select-marker', function(marker, dblclick) {
         if(marker.id == 'marker-for-canyon'){
-                viewer.setPanorama('img/canyon.jpg')
+            viewer.setPanorama('img/canyon.jpg')
         }
     });
-</script>
-
+})
