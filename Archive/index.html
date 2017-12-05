@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basic 360</title>
+  <style>
+    body { 
+      margin: 0px; 
+      overflow: hidden; 
+      background-color: #000; 
+    }
+    #box{
+     width: 905px;
+     height: 605px;
+     background-color: #262626;
+     position: relative;
+     
+    }
+    #sphere{
+     padding-top: 2.5px;
+     display: block;
+    }
+    #fullicon{
+     height: 18px;
+     width: 18px;
+     bottom: 5px;
+     right: 5px;
+     position: absolute;
+    }
+  </style>	
+  <meta charset="utf-8">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+ -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<br><br>
+
+<p id="test"></p>
+<center>
+<div id="box">
+  <div id="sphere">
+  <img id="fullicon" src="icons/fullscreen.png">
+  </div>
+</div>
+
+<br>
+<br>
+<button id = "button1" type="button" onclick="loadImage('city.jpg');">Pic1</button>
+<button id = "button2" type="button" onclick="loadImage('street.jpg');">Pic2</button>
+<button id = "button3" type="button" onclick="loadImage('lorry.jpg');">Pic3</button>
+<button id = "button4" type="button" onclick="loadImage('square.jpg');">Pic4</button>
+<button id = "button5" type="button" onclick="loadImage('stadium.jpg');">Pic5</button>
+<button id = "button6" type="button" onclick="loadImage('test.jpg');">Pic6</button>
+
+</center>
+<br>
+
+
+  <script src="360js/three.min.js"></script>
+  <script src="360js/OrbitControls.js"></script>
+  <script src="360js/Detector.js"></script>		
+  <script src="360js/Photosphere.js"></script>
+</body>
+</html>
