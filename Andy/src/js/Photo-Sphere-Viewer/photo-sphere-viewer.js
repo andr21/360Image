@@ -1354,10 +1354,11 @@ PhotoSphereViewer.DEFAULTS = {
   longitude_range: null,
   latitude_range: null,
   move_speed: 2.8,
-  time_anim: 2000,
-  anim_speed: '2rpm',
+  time_anim: 0,
+  anim_speed: '0.15rpm',
   anim_lat: null,
   fisheye: false,
+  /*
   navbar: [
     'autorotate',
     'zoom',
@@ -1367,6 +1368,7 @@ PhotoSphereViewer.DEFAULTS = {
     'gyroscope',
     'fullscreen'
   ],
+  */
   tooltip: {
     offset: 5,
     arrow_size: 7,
@@ -1437,6 +1439,7 @@ PhotoSphereViewer.prototype._bindEvents = function() {
     window.addEventListener('touchend', this);
     this.hud.container.addEventListener('mousemove', this);
     this.hud.container.addEventListener('touchmove', this);
+    this.hud.container.addEventListener('contextmenu', this);
   }
 
   if (PhotoSphereViewer.SYSTEM.fullscreenEvent) {
@@ -1472,6 +1475,7 @@ PhotoSphereViewer.prototype.handleEvent = function(evt) {
     case 'touchend':    this._onTouchEnd(evt);    break;
     case 'mousemove':   this._onMouseMove(evt);   break;
     case 'touchmove':   this._onTouchMove(evt);   break;
+    case 'contextmenu':   this._onContextMenu(evt);   break;
     case PhotoSphereViewer.SYSTEM.fullscreenEvent:  this._fullscreenToggled();  break;
     case PhotoSphereViewer.SYSTEM.mouseWheelEvent:  this._onMouseWheel(evt);    break;
     // @formatter:on
@@ -1541,12 +1545,30 @@ PhotoSphereViewer.prototype._onKeyDown = function(evt) {
   }
 };
 
+
+
+PhotoSphereViewer.prototype._onContextMenu = function(evt) {
+  var boundingRect = this.container.getBoundingClientRect();
+  //alert("You've tried to open context menu");
+  evt.preventDefault();
+            //alert(evt.clientY - boundingRect.top);
+            document.getElementById("rmenu").className = "show";  
+            document.getElementById("rmenu").style.left = evt.clientX - boundingRect.left + 'px';
+            document.getElementById("rmenu").style.top = evt.clientY - boundingRect.top + 'px';
+
+            window.event.returnValue = false;
+};
+
+
+
+
 /**
  * @summary Handles mouse button events
  * @param {MouseEvent} evt
  * @private
  */
 PhotoSphereViewer.prototype._onMouseDown = function(evt) {
+  document.getElementById("rmenu").className = "hide";  
   this._startMove(evt);
 };
 

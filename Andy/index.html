@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yo yo yo</title>
+
+
+
 <link rel="stylesheet" href="src/js/Photo-Sphere-Viewer/photo-sphere-viewer.css">
 
 <script src="src/js/three.js/three.min.js"></script>
@@ -6,19 +13,67 @@
 <script src="src/js/doT/doT.min.js"></script>
 <script src="src/js/Photo-Sphere-Viewer/photo-sphere-viewer.js"></script>
 
-<center>
-<div id="vrview"></div>
-</center>
+<head>
+
+<body>
+
+
+    <center>
+        <div id="vrview">
+            
+            <div class="hide" id="rmenu">
+                <a href="http://www.google.com" target="_blank">3Siddy photos</a>
+            </div>
+         
+        </div>
+    </center>
+
+
+
+</body>
+
 
 <style>
 #vrview{
 
-height: 400px;
-width: 800px;
-
+height: 500px;
+width: 700px;
+position: relative;
 }
 
+/* right click menu */
+.show {
+    z-index:1000;
+    position: absolute;
+    background-color:#1c1c1c;
+    border: 2px solid #ffffff;
+    padding: 2px;
+    display: block;
+    margin: 0;
+    list-style-type: none;
+    list-style: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show li{ list-style: none; }
+.show a { border: 0 !important; 
+    text-decoration: none;
+    font-family: "Arial";
+    color: #ffffff;
+     }
+.show a:hover { 
+    text-decoration: underline !important;
+    font-family: "Arial";
+    color: #ffffff;
+     }
+
 </style>
+
+
+
 
 <script type="text/template" id="pin123">
     <h2>Lorry thing</h2>
@@ -31,12 +86,14 @@ width: 800px;
                     candy tiramisu oat cake candy canes gummi bears liquorice. Marzipan biscuit macaroon apple pie chocolate bar. Cheesecake bonbon bonbon candy tootsie roll wafer.</p>
 
 </script>
+
+
 <script>
 
     var viewer = PhotoSphereViewer({
         container: 'vrview',
         panorama: 'img/lorry.jpg',
-        time_anim:false,
+        //time_anim:false,
         markers:[
             {
                 id:'marker-for-canyon',
@@ -91,6 +148,7 @@ width: 800px;
                 content: document.getElementById('pin123').innerHTML
             }
         ],
+        /*
         navbar: [
             'zoom',
             'markers',
@@ -107,6 +165,7 @@ width: 800px;
             'caption',
             'fullscreen'
         ]
+        */
     });
 
     viewer.on('select-marker', function(marker, dblclick) {
@@ -114,5 +173,6 @@ width: 800px;
                 viewer.setPanorama('img/canyon.jpg')
         }
     });
+
 </script>
 
